@@ -1,45 +1,48 @@
 {
-    "manifest_version": 2,
-    "name": "치지직 통나무 파워 자동 획득",
-    "version": "1.0.2",
-    "description": "치지직 파워(통나무) 자동 획득 및 파워 개수 표시",
-    "content_scripts": [
-        {
-            "matches": [
-                "https://chzzk.naver.com/*",
-                "https://m.chzzk.naver.com/*"
-            ],
-            "js": ["content.js"]
-        }
-    ],
-    "browser_action": {
-        "default_popup": "index.html",
-        "default_icon": "icon.png"
-    },
-    "icons": {
-        "128": "icon.png"
-    },
-    "permissions": [
-        "storage",
-        "activeTab",
-        "tabs",
-        "https://api.chzzk.naver.com/*"
-    ],
-    "web_accessible_resources": [
-        "log.html"
-    ],
-    "addons": {
-        "{e060084d-1a49-45d2-b446-decf15b32ff5}": {
-            "updates": [
-                {
-                    "version": "1.0.2",
-                    "update_link": "https://github.com/choco-lily/chzzk_auto_log_power/releases/download/1.0.2/68dd1aa159c64aa0b5cc-1.0.2.xpi"
-                },
-                {
-                    "version": "1.0.1",
-                    "update_link": "https://github.com/choco-lily/chzzk_auto_log_power/releases/download/1.0.1/68dd1aa159c64aa0b5cc-1.0.1.xpi"
-                }
-            ]
-        }
+  "manifest_version": 2,
+  "name": "\uce58\uc9c0\uc9c1 \ud1b5\ub098\ubb34 \ud30c\uc6cc \uc790\ub3d9 \ud68d\ub4dd",
+  "version": "1.0.3",
+  "description": "\uce58\uc9c0\uc9c1 \ud30c\uc6cc(\ud1b5\ub098\ubb34) \uc790\ub3d9 \ud68d\ub4dd \ubc0f \ud30c\uc6cc \uac1c\uc218 \ud45c\uc2dc",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chzzk.naver.com/*",
+        "https://m.chzzk.naver.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
+  ],
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs",
+    "https://api.chzzk.naver.com/*"
+  ],
+  "web_accessible_resources": [
+    "log.html"
+  ],
+  "addons": {
+    "{a02bb5f0-df7b-4485-a43a-cf96825cb71d}": {
+      "updates": [
+        {
+          "version": "1.0.3",
+          "update_link": "https://github.com/bytecakelake/chzzk_auto_log_power/releases/download/1.0.3/a02bb5f0-df7b-4485-a43a-cf96825cb71d-1.0.3.zip"
+        }
+      ]
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{a02bb5f0-df7b-4485-a43a-cf96825cb71d}"
+    }
+  }
 }
